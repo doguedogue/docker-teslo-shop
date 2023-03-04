@@ -10,11 +10,7 @@ services:
       target: ${STAGE}
       dockerfile: Dockerfile
     
-    # command: yarn start:dev
-    volumes:
-      - .:/app/
-      - /app/node_modules
-
+    image: rvilches38/teslo-shop-backend:2.5.0
     container_name: nest-app
     ports:
       - ${PORT}:${PORT}
